@@ -19,6 +19,8 @@ Inspired by Nick Janetakis [blog post](https://nickjanetakis.com/blog/dockerize-
   * `docker-compose exec website rails db:reset`
 * Migrate the database
   * `docker-compose exec website rails db:migrate`
+* Seed the database (fill the db for development purpose)
+  * `docker-compose exec website rails db:seed`
 ## SYSTEM DEPENDENCIES
 * Ruby version 2.4.3
 * Rails 5.1.3

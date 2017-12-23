@@ -64,10 +64,7 @@ group :development, :test do
   # gem 'pry-remote'
   # gem 'pry-stack_explorer'
 
-  # Spring speeds up development by keeping your application running in the background.
-  # Read more: https://github.com/rails/spring
-  # gem 'spring'
-
+  # To generate fake data in db
   # gem 'faker'
   # gem 'factory_girl_rails'
 end
@@ -82,7 +79,9 @@ group :development do
   # Get notified of file changes. Read more: https://github.com/guard/listen
   gem 'listen', '>= 3.0.5', '< 3.2'
 
-  # Use Spring. Read more: https://github.com/rails/spring
+  # Spring speeds up development
+  # by keeping your application running in the background.
+  # Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
@@ -95,7 +94,7 @@ gem 'webpacker', '~> 3.2'
 
 # User session management
 # gem 'devise'
-# Integrates OAuth2 tokens from the Doorkeeper gem into Devise authentication strategies
+# Integrates OAuth2 tokens from the Doorkeeper gem into Devise authentication
 # gem 'devise-doorkeeper'
 
 # Handle EC2 mounting
