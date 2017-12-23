@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.4.3'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
@@ -57,6 +58,18 @@ group :development, :test do
   # End to end testing of your rails apps (Rails 5.1+ supports this)
   # gem 'capybara', '~> 2.13'
   # gem 'selenium-webdriver'
+
+  # Call 'pry' anywhere in the code to stop execution and get a debugger console
+  # gem 'pry-byebug'
+  # gem 'pry-remote'
+  # gem 'pry-stack_explorer'
+
+  # Spring speeds up development by keeping your application running in the background.
+  # Read more: https://github.com/rails/spring
+  # gem 'spring'
+
+  # gem 'faker'
+  # gem 'factory_girl_rails'
 end
 
 group :development do
@@ -78,4 +91,39 @@ end
 gem 'tzinfo-data'
 
 # Use Webpacker to install react
-gem 'webpacker'
+gem 'webpacker', '~> 3.2'
+
+# User session management
+# gem 'devise'
+# Integrates OAuth2 tokens from the Doorkeeper gem into Devise authentication strategies
+# gem 'devise-doorkeeper'
+
+# Handle EC2 mounting
+# gem 'rubber'
+# gem 'has_secure_token'
+
+#### API #####
+# Grape allows you to build lightweight APIs with Ruby
+# gem 'grape'
+# protect api calls, last verion with grape support
+# gem 'doorkeeper',
+#     git: 'git://github.com/doorkeeper-gem/doorkeeper.git',
+#     ref: 'ab8cf72d80c2b60ed946ac461c0ac2a9e87fb34e'
+# represent models
+# gem 'roar'
+# connect with facebook
+# gem 'doorkeeper-grants_assertion',
+#     git: 'git://github.com/doorkeeper-gem/doorkeeper-grants_assertion.git',
+#     ref: '1b3acee'
+####
+
+# group :test do
+#   gem 'rspec-rails'
+#   gem 'rack-test', require: 'rack/test'
+#   # stubbing and setting expectations on HTTP requests in Ruby
+#   gem 'webmock'
+#   gem 'database_cleaner'
+#   gem 'rspec-sidekiq', '~> 3.0.0'
+#   gem 'simplecov', require: false
+#   gem 'elasticsearch-extensions'
+# end
