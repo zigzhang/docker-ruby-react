@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
   BrowserRouter as Router,
   Route
@@ -16,6 +17,10 @@ const App = (props) => (
     </div>
   </Router>
 )
+
+App.propTypes = {
+  startingQuoteId: PropTypes.number.isRequired
+}
 
 // You will need this on the bottom of each component file
 // to make it available through ES6 'import' statements.

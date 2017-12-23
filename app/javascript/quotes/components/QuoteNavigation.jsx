@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 const QuoteNavigation = (props) => {
@@ -19,4 +20,7 @@ const QuoteNavigation = (props) => {
   return element
 }
 
+QuoteNavigation.propTypes = {
+  direction: PropTypes.string
+}
 export default QuoteNavigation

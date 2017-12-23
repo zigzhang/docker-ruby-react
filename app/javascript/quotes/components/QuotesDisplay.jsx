@@ -3,6 +3,7 @@ import queryString from 'query-string'
 import axios from 'axios'
 import QuoteNavigation from './QuoteNavigation'
 import QuoteText from './QuoteText'
+import PropTypes from 'prop-types'
 
 class QuotesDisplay extends React.Component {
   constructor () {
@@ -13,10 +14,10 @@ class QuotesDisplay extends React.Component {
   }
 
   fetchQuote (id) {
-    console.log('Fetch Quote:')
+    // console.log('Fetch Quote:')
     axios.get(`api/quotes/${id}`)
       .then(response => {
-        console.log(response)
+        // console.log(response)
         this.setState({ quote: response.data })
       })
       .catch(error => {
@@ -41,15 +42,15 @@ class QuotesDisplay extends React.Component {
   }
 
   componentDidMount () {
-    console.log('Component Did Mount:')
-    console.log(this.props)
+    // console.log('Component Did Mount:')
+    // console.log(this.props)
     this.setQuoteIdFromQueryString(this.props.location.search)
     this.fetchQuote(this.quoteId)
   }
 
   componentWillReceiveProps (nextProps) {
-    console.log('Component Will Receive Props:')
-    console.log(nextProps)
+    // console.log('Component Will Receive Props:')
+    // console.log(nextProps)
     this.setQuoteIdFromQueryString(nextProps.location.search)
     this.fetchQuote(this.quoteId)
   }
@@ -75,5 +76,11 @@ class QuotesDisplay extends React.Component {
     )
   }
 }
+
+QuotesDisplay.propTypes = {
+  startingQuoteId: PropTypes.number.isRequired,
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
+};
 
 export default QuotesDisplay

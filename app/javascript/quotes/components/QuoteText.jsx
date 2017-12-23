@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const QuoteText = (props) => (
   <div className='quote'>
@@ -12,5 +13,9 @@ const QuoteText = (props) => (
     </div>
   </div>
 )
+
+QuoteText.propTypes = {
+  quote: PropTypes.object.isRequired
+}
 
 export default QuoteText

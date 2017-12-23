@@ -3,7 +3,7 @@
 ## INSTALLATION
 Inspired by Nick Janetakis [blog post](https://nickjanetakis.com/blog/dockerize-a-rails-5-postgres-redis-sidekiq-action-cable-app-with-docker-compose)
 ### Docker
-* Install Docker
+* [Install Docker](https://docs.docker.com/engine/installation/)
 * Build Docker Image
   * `docker-compose up --build`
 * Start containers
@@ -32,7 +32,8 @@ Inspired by Nick Janetakis [blog post](https://nickjanetakis.com/blog/dockerize-
 ## CODE QUALITY
 * [ESlint](https://eslint.org/) - Javascript Linter
   * `npm install eslint`
-  * Took the standard package
+  * `npm install eslint-plugin-react`
+  * `npm install babel-eslint`
 * [Rubocop](https://github.com/bbatsov/rubocop) - Ruby (and rails) Linter
 
 _Things you may want to cover:_
