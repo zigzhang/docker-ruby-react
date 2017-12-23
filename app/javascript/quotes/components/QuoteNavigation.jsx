@@ -1,8 +1,8 @@
-import React from 'react';  
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const QuoteNavigation = (props) => {
-  let element = null;
+  let element = null
   if (props.direction === 'previous') {
     element = (
       <Link className='link-previous' to={props.link}>
@@ -19,4 +19,4 @@ const QuoteNavigation = (props) => {
   return element
 }
 
-export default QuoteNavigation  
+export default QuoteNavigation
