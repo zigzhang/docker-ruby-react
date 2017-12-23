@@ -29,6 +29,11 @@ Inspired by Nick Janetakis [blog post](https://nickjanetakis.com/blog/dockerize-
 * [Redis](https://redis.io/) - Key value database as cache backend (eg: for Sidekiq)
 * [Sidekiq](https://sidekiq.org/) - Background job processor
 * [Webpacker](https://github.com/rails/webpacker) - For React on Rails
+## CODE QUALITY
+* [ESlint](https://eslint.org/) - Javascript Linter
+  * `npm install eslint`
+  * Took the standard package
+* [Rubocop](https://github.com/bbatsov/rubocop) - Ruby (and rails) Linter
 
 _Things you may want to cover:_
 * Configuration
