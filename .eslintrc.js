@@ -5,7 +5,7 @@ module.exports = {
         // Allow the use of console for Warning and Error
         "no-console": ["error", {"allow": ["warn", "error"]}]
     },
-    // Allow the use of document, console etc.
+    // Define browser object such as document, console etc.
     "env": {
         "browser": true
     }

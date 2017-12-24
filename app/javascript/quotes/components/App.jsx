@@ -19,7 +19,7 @@ const App = (props) => (
 )
 
 App.propTypes = {
-  startingQuoteId: PropTypes.number.isRequired
+  startingQuoteId: PropTypes.string.isRequired
 }
 
 // You will need this on the bottom of each component file

@@ -78,7 +78,7 @@ class QuotesDisplay extends React.Component {
 }
 
 QuotesDisplay.propTypes = {
-  startingQuoteId: PropTypes.number.isRequired,
+  startingQuoteId: PropTypes.string.isRequired,
   history: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired
 };
